@@ -1,0 +1,118 @@
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.card-container {
+  max-width: 1276px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(254px, 264px));
+  grid-auto-rows: 336px;
+  flex-wrap: wrap;
+  gap: 75px 72px;
+  justify-content: center;
+
+  a,
+  .card {
+    border-radius: 5px;
+    background: #2b3844;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+    transition: 0.3s ease;
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+    }
+    h2 {
+      padding: 24px 0 16px 26px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 26px;
+    }
+    li {
+      display: flex;
+      padding: 0 0 8px 26px;
+      gap: 3px;
+    }
+
+    &:hover {
+      transform: translate(5px, -10px);
+    }
+  }
+}
+
+.search {
+  width: 480px;
+  padding: 19px 32px;
+  border-radius: 5px;
+  background: #2b3844;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 48px 0;
+  input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    color: inherit;
+  }
+}
+
+.filter {
+  margin: 48px 0;
+  position: relative;
+  border-radius: 5px;
+  background: #2b3844;
+  box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+  width: 240px;
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
+  .filter-text {
+    display: flex;
+    padding: 18px 24px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter-option {
+    width: 100%;
+    top: 60px;
+    position: absolute;
+    border-radius: 5px;
+    background: #2b3844;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px 24px;
+    a {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.pagination {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #2b3844;
+  background: initial;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    transform: translate(5px, -10px);
+  }
+}
